@@ -14,6 +14,7 @@ const NavMob = () => {
         <IconButton
           aria-label="Open Menu"
           size="lg"
+          bgColor="dark"
           mr={2}
           icon={<HamburgerIcon />}
           onClick={() => changeDisplay("flex")}
@@ -38,6 +39,7 @@ const NavMob = () => {
           <IconButton
             mt={2}
             mr={2}
+            bgColor="dark"
             aria-label="Open Menu"
             size="lg"
             icon={<CloseIcon />}
@@ -51,7 +53,6 @@ const NavMob = () => {
               onClick={() => {
                 changeDisplay("none");
               }}
-              as="a"
               variant="ghost"
               aria-label="Home"
               my={5}
@@ -66,7 +67,6 @@ const NavMob = () => {
               onClick={() => {
                 changeDisplay("none");
               }}
-              as="a"
               variant="ghost"
               aria-label="About"
               my={5}
@@ -81,7 +81,6 @@ const NavMob = () => {
               onClick={() => {
                 changeDisplay("none");
               }}
-              as="a"
               variant="ghost"
               aria-label="Contact"
               my={5}
@@ -98,7 +97,6 @@ const NavMob = () => {
               onClick={() => {
                 changeDisplay("none");
               }}
-              as="a"
               variant="ghost"
               aria-label="Contact"
               my={5}
@@ -112,7 +110,6 @@ const NavMob = () => {
               onClick={() => {
                 changeDisplay("none");
               }}
-              as="a"
               variant="ghost"
               aria-label="Contact"
               my={5}
