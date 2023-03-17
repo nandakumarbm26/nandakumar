@@ -21,6 +21,7 @@ function Intro() {
             <Heading
               typeof="h1"
               color="white"
+              animation="0.5s ease-out 0s 1 slideInLeft"
               fontSize={{ b: "8vw", md: "4.5vw", "2xl": "100px" }}
             >
               Hi, I Am
@@ -30,15 +31,37 @@ function Intro() {
             <Heading
               fontSize={{ b: "6vw", md: "3.5vw", "2xl": "80px" }}
               color="blush"
+              animation="0.5s ease-out 0s 1 slideInRight"
             >
               Software Dev
             </Heading>
-            <Text fontSize="14px">MERN stack | Web dev | Shopify</Text>
-            <HStack>
+            <Text
+              sx={{
+                "@keyframes fadeIn": {
+                  "0%": { opacity: 0 },
+                  "100%": { opacity: 1 },
+                },
+                animation: "fadeIn 3s",
+              }}
+              fontSize="14px"
+            >
+              MERN stack | Web dev | Shopify
+            </Text>
+            <HStack
+              sx={{
+                "@keyframes fadeIn": {
+                  "0%": { opacity: 0 },
+                  "100%": { opacity: 1 },
+                },
+                animation: "fadeIn 5s",
+              }}
+            >
               <Button
                 fontFamily="roboto"
                 background="fanta"
                 color="black"
+                as="a"
+                href="mailto:nandakumarbm26@gmail.com?subject=Reaching out to Hire Software dev/freelance project contract&body=Please mention JD/project requirements[delete this line]"
                 _hover={{ background: "blush" }}
                 rightIcon={<ExternalLinkIcon />}
               >
@@ -64,6 +87,7 @@ function Intro() {
             height={{ b: "50%", md: "100%" }}
           >
             <Box
+              animation="0.5s ease-out 0s 1 slideInRight"
               background="fanta"
               _hover={{ bg: "blush" }}
               h={{ b: "55vw", md: "40vw" }}
@@ -76,6 +100,7 @@ function Intro() {
               borderRadius="100%"
             >
               <Box
+                animation="1s ease-out 0s 1 slideInRight"
                 background="url(nk.png)"
                 h="100%"
                 maxH="400px"

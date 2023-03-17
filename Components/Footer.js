@@ -1,4 +1,4 @@
-import { Box, Button, Input, Stack, Text } from "@chakra-ui/react";
+import { Box, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,13 +9,14 @@ function Footer() {
       color="white"
       bg="url(/polybg.jpg)"
       borderTop="5px solid black"
-      mt="30px"
+      mt="25px"
       bgSize="cover"
     >
       <Stack
         direction={{ b: "column", md: "row" }}
         justifyContent="space-between"
         p="5% 0"
+        gap="20px"
       >
         <Box>
           <Image src="/icon_nk_white.png" width={100} height={50} />
@@ -29,55 +30,110 @@ function Footer() {
             <Link href="tel:+919538727397">+919538727397</Link>
           </Box>
         </Box>
-        {/* <Stack>
-          <Box>
-            <Text>Projects</Text>
-            <Text>Projects</Text>
-            <Text>Projects</Text>
-            <Text>Projects</Text>
-            <Text>Projects</Text>
-          </Box>
-        </Stack> */}
-        <Stack direction="row">
-          <Box width="300px" position="relative">
-            <Input
-              h="40px"
-              placeholder="Your Email"
-              width="100%"
-              type="email"
-              borderRightRadius="10px"
-              borderLeftRadius="10px"
-              _focus={{ borderSize: "2px", borderColor: "sagegreen" }}
-            />
-            <Button
-              position="absolute"
-              right="0"
-              color="sagegreen"
-              bg="none"
-              _hover={{ bg: "none" }}
-              marginInlineStart="none"
-              m="0px"
-              w="80px"
-              h="40px"
-              bgColor="none"
-              borderRadius="10px"
-              type="submit"
+        <Box
+          textAlign="center"
+          p="30px"
+          borderLeft={{ md: "1px solid white" }}
+          borderBottom={{ b: "1px solid white", md: "none" }}
+          borderTop={{ b: "1px solid white", md: "none" }}
+          borderRight={{ md: "1px solid white" }}
+        >
+          If u wanna fly high,
+          <br /> give up on those things which weighs you down
+        </Box>
+        <Stack direction="column">
+          <Stack direction={"column"}>
+            <Link
+              href="https://github.com/nandakumarbm26"
+              target="_blank"
+              style={{
+                textAlign: "center",
+                display: "flex",
+                alignItems: "center",
+              }}
             >
-              Reach me!
-            </Button>
-          </Box>
+              <Box
+                h="25px"
+                w="25px"
+                mr="10px"
+                bg="url(./icons/github.svg)"
+                display="inline-block"
+                bgSize="contain"
+              />
+              GitHub/nandakumarbm26
+            </Link>
+            <Link
+              href="https://instagram.com/llnk26ll?igshid=ZDdkNTZiNTM="
+              target="_blank"
+              style={{
+                textAlign: "center",
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <Box
+                h="25px"
+                w="25px"
+                mr="10px"
+                bg="url(./icons/instagram.png)"
+                display="inline-block"
+                bgSize="contain"
+              />
+              instagram/llnk26ll
+            </Link>
+            <Link
+              href="https://github.com/nandakumarbm26"
+              target="_blank"
+              style={{
+                textAlign: "center",
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <Box
+                h="25px"
+                w="25px"
+                mr="10px"
+                bg="url(./icons/facebook.png)"
+                display="inline-block"
+                bgSize="contain"
+              />
+              facebook/nandakumarbm
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/nandakumarbm"
+              target="_blank"
+              style={{
+                textAlign: "center",
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <Box
+                h="25px"
+                w="25px"
+                mr="10px"
+                bg="url(./icons/linkedin.png)"
+                display="inline-block"
+                bgSize="contain"
+              />
+              linkedin/nandakumarbm
+            </Link>
+          </Stack>
         </Stack>
       </Stack>
-      {/* <Stack alignContent={"center"}>
-        <Stack direction={"row"}>
-          <ChatIcon />
-          <ChatIcon />
-          <ChatIcon />
-          <ChatIcon />
-          <ChatIcon />
-        </Stack>
-        <Text>Made with Love By Nanda Kunar</Text>
-      </Stack> */}
+      <Text
+        pb="10px"
+        color="dark"
+        width="100%"
+        fontSize="10px"
+        textAlign="center"
+      >
+        copyrights &#169; 2023
+      </Text>
+      <Text pb="10px" width="100%" fontSize="10px" textAlign="center">
+        Made with ❤️ by NK
+      </Text>
     </Box>
   );
 }

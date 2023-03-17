@@ -1,5 +1,5 @@
-import { HamburgerIcon } from "@chakra-ui/icons";
-import { Box, Button, HStack, IconButton, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, HStack, Stack, Text } from "@chakra-ui/react";
+import NavMob from "./NavMob";
 import { HLink } from "./Types";
 function Header() {
   return (
@@ -23,23 +23,23 @@ function Header() {
         >
           NandaKumar.
         </Text>
-        <IconButton
-          display={{ b: "block", md: "none" }}
-          background="none"
-          height="50px"
-          width="50px"
-          _hover={{ background: "blush" }}
-          icon={<HamburgerIcon height="30px" width="30px" color="white" />}
-        />
+
+        <NavMob />
         <HStack
-          width="35%"
+          width="60%"
           maxWidth="600px"
           display={{ b: "none", md: "flex" }}
           justifyContent="space-evenly"
         >
-          <HLink href="/">home</HLink>
-          <HLink href="#">Work</HLink>
+          <HLink href="/">About</HLink>
+          <HLink href="#work">Work</HLink>
           <HLink href="#projects">Projects</HLink>
+          <HLink
+            href="https://drive.google.com/file/d/147RU1xQE23GD4hWGpofPTf-14yAMrxLH/view?usp=sharing"
+            traget="_blank"
+          >
+            Resume
+          </HLink>
           {/* <HLink href="#">Blogs</HLink> */}
           <Button
             bg="none"

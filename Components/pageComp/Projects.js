@@ -111,6 +111,7 @@ function SlideCard({ d }) {
                 bg="fanta"
                 _hover={{ bg: "blush" }}
                 href={d.live}
+                target="_blank"
                 rightIcon={<ExternalLinkIcon />}
               >
                 Try Out
@@ -123,6 +124,7 @@ function SlideCard({ d }) {
                 fontFamily="roboto"
                 border="1px solid white"
                 _hover={{ background: "none" }}
+                target="_blank"
                 rightIcon={<ExternalLinkIcon />}
               >
                 Github repo

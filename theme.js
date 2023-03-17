@@ -81,6 +81,22 @@ const theme = extendTheme({
         animation: "swipe var(--speed) linear infinite backwards",
       },
 
+      "@keyframes slideInLeft": {
+        "0%": {
+          transform: "translateX(-100vw)",
+        },
+        "100%": {
+          transform: "translateX(0)",
+        },
+      },
+      "@keyframes slideInRight": {
+        "0%": {
+          transform: "translateX(100vw)",
+        },
+        "100%": {
+          transform: "translateX(0)",
+        },
+      },
       "@keyframes swipe": {
         "0%": {
           transform: "translate(0)",
@@ -93,4 +109,16 @@ const theme = extendTheme({
   },
 });
 
+export const colors = {
+  fanta: "#FA5D29",
+  deep: "#EDF5E1",
+  baby: "#fef2f2",
+  sagegreen: "#5CDB95",
+  deepblush: "#FFC5B1",
+  purple: { 3: "#502bd8", 2: "#6749d1", 1: "#917eda" },
+  blush: "#FFAE94",
+  dark: "#222",
+  black: "#000",
+  white: "#fff",
+};
 export default theme;
