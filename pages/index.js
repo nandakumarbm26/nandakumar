@@ -4,9 +4,6 @@ import Projects from "@/Components/pageComp/Projects";
 import TechStack from "@/Components/pageComp/TechStack";
 import Work from "@/Components/pageComp/work";
 import { Heading, VStack } from "@chakra-ui/react";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (

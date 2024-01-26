@@ -14,6 +14,8 @@ const images = [
 ].map((image) => ({
   image,
 }));
+
+
 function TechStack() {
   return <Banner images={images} speed={10000} />;
 }

@@ -1,14 +1,142 @@
 import { colors } from "@/theme";
-import { Box, Heading, Stack } from "@chakra-ui/react";
+import { Box, Heading, Stack, Button } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+
 import Link from "next/link";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { HLink } from "./Types";
 function Timeline() {
   return (
     <VerticalTimeline>
+      <VerticalTimelineElement
+        contentStyle={{
+          background: colors.dark,
+          color: "#fff",
+        }}
+        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+        date="Dec-2023 - Present"
+        iconStyle={{ background: colors.fanta, color: "#fff" }}
+        icon={
+          <Box
+            bg="url(./icons/workplace.svg)"
+            bgSize="contain"
+            transform="scale(0.7)"
+            width="100%"
+            height="100%"
+          />
+        }
+      >
+        <Stack gap="10px" padding={{ b: "10px", md: "50px" }}>
+          <Heading as="h3" fontSize="xl">
+            Co-Founder (Technology)
+          </Heading>
+          <Heading as="h4" fontSize="l" color="fanta">
+            <Link href="https://www.cosmictech.io" target="_blank">
+              CosmicTech.io
+            </Link>
+          </Heading>
+          <p>
+            CosmicTech redefines networking with cutting-edge NFC digital
+            business cards. Elevate your connections with a simple tap, merging
+            innovation and sustainability. Transform your professional presence,
+            one cosmic connection at a time.
+          </p>
+          <Button
+            fontFamily="roboto"
+            background="fanta"
+            color="black"
+            as="a"
+            href="https://www.cosmictech.io/nandakumar"
+            _hover={{ background: "blush" }}
+            rightIcon={<ExternalLinkIcon />}
+          >
+            my cosmic profile (digital business card).
+          </Button>
+        </Stack>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        contentStyle={{
+          background: colors.dark,
+          color: "#fff",
+        }}
+        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+        date="Aug-2023 - Present"
+        iconStyle={{ background: colors.fanta, color: "#fff" }}
+        icon={
+          <Box
+            bg="url(./icons/workplace.svg)"
+            bgSize="contain"
+            transform="scale(0.7)"
+            width="100%"
+            height="100%"
+          />
+        }
+      >
+        <Stack gap="10px" padding={{ b: "10px", md: "50px" }}>
+          <Heading as="h3" fontSize="xl">
+            Graduate Engineer Trainee ( Data Engineering )
+          </Heading>
+          <Heading as="h4" fontSize="l" color="fanta">
+            Mercedes-Benz R&D India
+          </Heading>
+          <ul>
+            <li>NLP for relevant document suggestion</li>
+            <li>Power BI dashboards creation for Business data</li>
+            <li>Data Engineering tools training (pyspark, databricks, SQL)</li>
+            <li>
+              Skills: python, NLP, ML, AI. Big data, data analytics, powerBI,
+              pyspark, sparkSQL databricks
+            </li>
+          </ul>
+        </Stack>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        contentStyle={{
+          background: colors.dark,
+          color: "#fff",
+        }}
+        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+        date="Apr-2023 - June-2023"
+        iconStyle={{ background: colors.fanta, color: "#fff" }}
+        icon={
+          <Box
+            bg="url(./icons/workplace.svg)"
+            bgSize="contain"
+            transform="scale(0.7)"
+            width="100%"
+            height="100%"
+          />
+        }
+      >
+        <Stack gap="10px" padding={{ b: "10px", md: "50px" }}>
+          <Heading as="h3" fontSize="xl">
+            Software Development Intern
+          </Heading>
+          <Heading as="h4" fontSize="l" color="fanta">
+            SkilZen EdTech
+          </Heading>
+          <ul>
+            <li>Responsible for the development of user interface.</li>
+            <li> Convert figma design into responsive websites.</li>
+            <li>API integration to the web application</li>
+            <li>
+              Performed SEO for the data intensive blogs website. Utilized SEO
+              features of nextjs to the best.
+            </li>
+
+            <li>Worked on Automation of workflows in Directus CMS.</li>
+            <li>Nextjs 13 migration from older version of nextjs</li>
+            <li style={{ fontStyle: "italic", fontSize: "14px" }}>
+              Skills: nextjs, nodejs, javascript, html, tailwind css, Typescript
+            </li>
+          </ul>
+        </Stack>
+      </VerticalTimelineElement>{" "}
       <VerticalTimelineElement
         contentStyle={{
           background: colors.dark,
@@ -114,7 +242,6 @@ function Timeline() {
           </ul>
         </Stack>
       </VerticalTimelineElement>
-
       <VerticalTimelineElement
         contentStyle={{
           background: colors.dark,

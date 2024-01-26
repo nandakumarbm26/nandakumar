@@ -4,7 +4,7 @@ import { Box, Button, Heading, HStack, Stack, Text } from "@chakra-ui/react";
 function Intro() {
   return (
     <>
-      <Box borderTop="1px solid white" width="100%" mt="20px">
+      <Box width="100%" mt="20px">
         <Stack
           direction={{ b: "column-reverse", md: "row" }}
           justifyContent="center"
@@ -22,7 +22,7 @@ function Intro() {
               typeof="h1"
               color="white"
               animation="0.5s ease-out 0s 1 slideInLeft"
-              fontSize={{ b: "8vw", md: "4.5vw", "2xl": "100px" }}
+              fontSize={{ b: "8vw", md: "4.5vw", "2xl": "64px" }}
             >
               Hi, I Am
               <br />
@@ -43,9 +43,9 @@ function Intro() {
                 },
                 animation: "fadeIn 3s",
               }}
-              fontSize="14px"
+              fontSize="18px"
             >
-              MERN stack | Web dev | Shopify
+              MERN stack | Web dev | AI/ML | Data Engineering<br/>Graduate Engineer Trainee, Mercedes-Benz R&D India
             </Text>
             <HStack
               sx={{
@@ -97,17 +97,19 @@ function Intro() {
               maxW="400px"
               backgroundSize="contain"
               backgroundRepeat="no-repeat"
+              overflow="clip"
               borderRadius="100%"
             >
               <Box
                 animation="1s ease-out 0s 1 slideInRight"
                 background="url(nk.png)"
                 h="100%"
-                maxH="400px"
                 width="100%"
-                backgroundPosition="center"
                 maxW="400px"
+                maxH="400px"
+                backgroundPosition="center"
                 backgroundSize="contain"
+                transform="scale(1.3)"
                 backgroundRepeat="no-repeat"
                 borderRadius="100%"
               ></Box>

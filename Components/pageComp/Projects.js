@@ -13,21 +13,6 @@ import Carousel, { Slide } from "../Carousel";
 
 const data = [
   {
-    title: "Virtual Try On",
-    github: "#",
-    live: "https://vison-express-ui.vercel.app",
-    desc: `Virtual Try-on lets you to see what you’ll look like in new
-    glasses or sunglasses via your webcam. Simply submit a photo
-    and the Virtual Try-on software will digitally position frames
-    over your face. You can even share the results with friends to
-    help decide if the new specs or shades suit you. Narrow down
-    your choices to find frames that match your face shape and
-    personal style without ever leaving home.`,
-    tech: `Tech Stack : ReactJS, MaterialUI, Flask, Algorithms and
-    opensource libraries(mediapipe,opencv)`,
-    imageurl: "/proj1.png",
-  },
-  {
     title: "Resume Builder",
     github: "#",
     live: "https://resume-builder-five.vercel.app/",
@@ -43,6 +28,21 @@ const data = [
     tech: `Tech Stack : ReactJS, MaterialUI, Flask, Algorithms and
     opensource libraries(mediapipe,opencv)`,
     imageurl: "/proj3.png",
+  },
+  {
+    title: "Virtual Try On",
+    github: "#",
+    live: "https://vison-express-ui.vercel.app",
+    desc: `Virtual Try-on lets you to see what you’ll look like in new
+    glasses or sunglasses via your webcam. Simply submit a photo
+    and the Virtual Try-on software will digitally position frames
+    over your face. You can even share the results with friends to
+    help decide if the new specs or shades suit you. Narrow down
+    your choices to find frames that match your face shape and
+    personal style without ever leaving home.`,
+    tech: `Tech Stack : ReactJS, MaterialUI, Flask, Algorithms and
+    opensource libraries(mediapipe,opencv)`,
+    imageurl: "/proj1.png",
   },
 ];
 

@@ -3,15 +3,21 @@ import NavMob from "./NavMob";
 import { HLink } from "./Types";
 function Header() {
   return (
-    <>
+    <div style={{display:"flex",width:"100%",overflow:"auto"}}>
       <Stack
-        // position="fixed"
+        top={0}
+        width="100%"
+        position="sticky"
         className="main"
         mt="30px"
+        background="#fff3"
+        borderRadius="10px"
+        padding="15px"
         justifyContent="space-between"
         alignItems="center"
         direction="row"
-        height="50px"
+        alignSelf="flex-start"
+        overflowY="auto"
       >
         <Text
           h="100%"
@@ -30,6 +36,8 @@ function Header() {
           maxWidth="600px"
           display={{ b: "none", md: "flex" }}
           justifyContent="space-evenly"
+          fontSize="20px"
+          fontWeight="bold"
         >
           <HLink href="/">About</HLink>
           <HLink href="#work">Work</HLink>
@@ -50,6 +58,8 @@ function Header() {
             fontFamily="roboto"
             textAlign="center"
             h="40px"
+            fontSize="20px"
+            fontWeight="bold"
             w="100px"
             color="white"
             _hover={{ color: "black", bg: "white" }}
@@ -58,8 +68,7 @@ function Header() {
           </Button>
         </HStack>
       </Stack>
-      <Box></Box>
-    </>
+    </div>
   );
 }
 

@@ -38,13 +38,13 @@ function Work() {
               textAlign="center"
               alignItems="center"
             >
-              1 +
+              Graduate Engineer Trainee
               <br />
-              Year
               <br />
-              Of
+              Mercedes-Benz Research and Development India
               <br />
-              Development
+              <br />
+              Data Engineering
             </Box>
           </GridItem>
           <GridItem
@@ -60,7 +60,8 @@ function Work() {
               textAlign="center"
               alignItems="center"
             >
-              Web development
+              Full Stack Developer <br />
+              <br /> JavaScript <br /> (MERN)
             </Box>
           </GridItem>
           <GridItem
@@ -76,7 +77,8 @@ function Work() {
               textAlign="center"
               alignItems="center"
             >
-              Shopify
+              Startup <br />
+              <br /> CosmicTech
             </Box>
           </GridItem>
           <GridItem

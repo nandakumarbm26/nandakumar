@@ -6,32 +6,27 @@ import { useState } from "react";
 const NavMob = () => {
   const [display, changeDisplay] = useState("none");
   return (
-    <Flex>
-      <Flex position="fixed" top="1rem" right="1rem" align="center">
-        {/* Desktop */}
-
-        {/* Mobile */}
-        <IconButton
-          aria-label="Open Menu"
-          size="lg"
-          bgColor="dark"
-          mr={2}
-          icon={<HamburgerIcon />}
-          onClick={() => changeDisplay("flex")}
-          display={{ b: "flex", md: "none" }}
-        />
-      </Flex>
+    <Flex zIndex={40}>
+      <IconButton
+        aria-label="Open Menu"
+        size="lg"
+        bgColor="dark"
+        mr={2}
+        icon={<HamburgerIcon />}
+        onClick={() => changeDisplay("flex")}
+        display={{ b: "flex", md: "none" }}
+      />
 
       {/* Mobile Content */}
       <Flex
         w="100vw"
-        display={display}
         bgColor="dark"
-        zIndex={20}
+        zIndex={40}
         h="100vh"
         pos="fixed"
         top="0"
-        left="0"
+        left={display === "flex" ? "0" : "100vw"}
+        transition="width 2ms"
         overflowY="auto"
         flexDir="column"
       >
