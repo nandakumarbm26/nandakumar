@@ -43,7 +43,7 @@ function Header() {
           <HLink href="#work">Work</HLink>
           <HLink href="#projects">Projects</HLink>
           <HLink
-            href="https://drive.google.com/file/d/147RU1xQE23GD4hWGpofPTf-14yAMrxLH/view?usp=sharing"
+            href="https://drive.google.com/file/d/1iCMzSL1Nn1Q4xYFT4cfgC241KVCw-xKr/view?usp=sharing"
             traget="_blank"
           >
             Resume
