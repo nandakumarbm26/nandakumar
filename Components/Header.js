@@ -22,6 +22,7 @@ function Header() {
         <Text
           h="100%"
           color="white"
+          // fontFamily="open-sans"
           fontWeight="bold"
           fontSize="30px"
           _hover={{ color: "fanta" }}
@@ -43,10 +44,11 @@ function Header() {
           <HLink href="#projects">Projects</HLink>
           <HLink
             href="https://drive.google.com/file/d/1iCMzSL1Nn1Q4xYFT4cfgC241KVCw-xKr/view?usp=sharing"
-            target="_blank"
+            traget="_blank"
           >
             Resume
           </HLink>
+          {/* <HLink href="#">Blogs</HLink> */}
           <Button
             bg="none"
             as="a"
