@@ -58,22 +58,25 @@ function Contact() {
                 };
 
                 console.log(e);
-                fetch("http://localhost:3000/api/hello", {
+                fetch("/api/hello", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",
                   },
                   body: JSON.stringify(data),
                 })
+                  .then((response) => response.json())
                   .then((data) => {
+                    console.log("Success:", data);
                     setLoading(false);
                     setOpen(false);
                   })
-                  .catch((error) =>
+                  .catch((error) => {
+                    console.error("Error:", error);
                     alert(
-                      "error occurred at our backend. We regret the inconvenience."
-                    )
-                  );
+                      "An error occurred at our backend. We regret the inconvenience."
+                    );
+                  });
               }}
             >
               <InputGroup gap="10px" flexDirection="column">
@@ -109,7 +112,7 @@ function Contact() {
           )}
           {!open && (
             <Text fontSize="20px">
-              Thank You for your intrest. I will get back to you. &#128516;
+              Thank You for your interest. I will get back to you. &#128516;
             </Text>
           )}
         </Box>
