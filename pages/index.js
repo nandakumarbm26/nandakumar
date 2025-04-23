@@ -3,6 +3,7 @@ import Intro from "@/Components/pageComp/Intro";
 import Projects from "@/Components/pageComp/Projects";
 import TechStack from "@/Components/pageComp/TechStack";
 import Work from "@/Components/pageComp/work";
+import FreeLance from "@/Components/pageComp/FreeLance";
 import { Heading, VStack } from "@chakra-ui/react";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         </Heading>
         <TechStack />
         <Work />
+        <FreeLance />
         <Contact />
       </VStack>
     </>
