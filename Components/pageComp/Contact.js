@@ -65,18 +65,15 @@ function Contact() {
                   },
                   body: JSON.stringify(data),
                 })
-                  .then((response) => response.json())
                   .then((data) => {
-                    console.log("Success:", data);
                     setLoading(false);
                     setOpen(false);
                   })
-                  .catch((error) => {
-                    console.error("Error:", error);
+                  .catch((error) =>
                     alert(
-                      "An error occurred at our backend. We regret the inconvenience."
-                    );
-                  });
+                      "Error occurred at our backend. We regret the inconvenience."
+                    )
+                  );
               }}
             >
               <InputGroup gap="10px" flexDirection="column">
@@ -103,7 +100,6 @@ function Contact() {
                 fontSize={{ b: "12px", md: "16px" }}
                 bg="fanta"
                 _hover={{ bg: "blush" }}
-                onClick={(e) => {}}
                 isLoading={loading}
               >
                 Submit
