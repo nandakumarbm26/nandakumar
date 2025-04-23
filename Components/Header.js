@@ -66,6 +66,23 @@ function Header() {
           >
             Contact
           </Button>
+          <Button
+            bg="none"
+            as="a"
+            href="https://myaccount.google.com/"
+            border="1px solid white"
+            borderRadius="0"
+            fontFamily="roboto"
+            textAlign="center"
+            h="40px"
+            fontSize="20px"
+            fontWeight="bold"
+            w="100px"
+            color="white"
+            _hover={{ color: "black", bg: "white" }}
+          >
+            Login
+          </Button>
         </HStack>
       </Stack>
     </div>
