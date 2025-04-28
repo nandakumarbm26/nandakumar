@@ -14,6 +14,8 @@ import { useState } from "react";
 function Contact() {
   const [open, setOpen] = useState(true);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
   return (
     <>
       <Heading
@@ -47,7 +49,7 @@ function Contact() {
                 flexDirection: "column",
               }}
               method="POST"
-              onSubmit={(e) => {
+              onSubmit={async (e) => {
                 setLoading(true);
                 e.preventDefault();
                 var data = {
@@ -57,23 +59,25 @@ function Contact() {
                   msg: e.target[3].value,
                 };
 
-                console.log(e);
-                fetch("/api/hello", {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/json",
-                  },
-                  body: JSON.stringify(data),
-                })
-                  .then((data) => {
-                    setLoading(false);
-                    setOpen(false);
-                  })
-                  .catch((error) =>
-                    alert(
-                      "Error occurred at our backend. We regret the inconvenience."
-                    )
-                  );
+                try {
+                  const response = await fetch("/api/hello", {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(data),
+                  });
+
+                  if (!response.ok) {
+                    throw new Error("Error occurred at our backend. We regret the inconvenience.");
+                  }
+
+                  setLoading(false);
+                  setOpen(false);
+                } catch (error) {
+                  setError(error.message);
+                  setLoading(false);
+                }
               }}
             >
               <InputGroup gap="10px" flexDirection="column">
@@ -104,6 +108,7 @@ function Contact() {
               >
                 Submit
               </Button>
+              {error && <Text color="red.500">{error}</Text>}
             </form>
           )}
           {!open && (
