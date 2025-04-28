@@ -1,24 +1,36 @@
-import { Box, Heading, Text, Stack } from "@chakra-ui/react";
+import { Box, Heading, Stack, Text } from "@chakra-ui/react";
 
 function FreeLance() {
   return (
-    <Box className="main" id="freelance" p="5%">
-      <Heading as="h2" color="blush" borderBottom="1px solid orange">
-        Freelance Work
+    <Box className="main" color="white" bg="dark" p="5%" borderRadius="10px" mt="20px">
+      <Heading as="h2" color="blush" borderBottom="1px solid orange" mb="20px">
+        Freelance Work Showcase
       </Heading>
-      <Stack direction={{ b: "column", md: "row" }} gap="40px" mt="20px">
-        <Box flex="1" bg="dark" p="20px" borderRadius="10px">
-          <Heading as="h3" color="fanta">Overall Experience</Heading>
-          <Text mt="10px">With over 3 years of freelance experience, I have successfully delivered multiple projects across various domains including web development, AI/ML, and data engineering.</Text>
+      <Stack spacing="30px">
+        <Box>
+          <Heading as="h3" color="fanta" mb="10px">Overall Experience</Heading>
+          <Text fontSize="16px">
+            With over 3 years of experience in freelance web development, I have worked with diverse clients
+            across various industries, delivering customized solutions that meet their unique needs.
+          </Text>
         </Box>
-        <Box flex="1" bg="dark" p="20px" borderRadius="10px">
-          <Heading as="h3" color="fanta">Projects</Heading>
-          <Text mt="10px">Some of my notable freelance projects include a full-stack e-commerce platform and a custom AI solution for automated data analysis.</Text>
+        <Box>
+          <Heading as="h3" color="fanta" mb="10px">Projects</Heading>
+          <Text fontSize="16px">
+            - Developed a full-stack eCommerce platform using MERN stack.
+            <br />
+            - Built a responsive portfolio site for a graphic designer.
+            <br />
+            - Implemented SEO optimization for several web applications.
+          </Text>
         </Box>
-        <Box flex="1" bg="dark" p="20px" borderRadius="10px">
-          <Heading as="h3" color="fanta">Client Testimonials</Heading>
-          <Text mt="10px">"Exceptional service and support throughout the project. Delivered high-quality work on time." - Client A</Text>
-          <Text mt="10px">"Highly recommend for any web development needs. Great communication and results." - Client B</Text>
+        <Box>
+          <Heading as="h3" color="fanta" mb="10px">Client Testimonials</Heading>
+          <Text fontSize="16px" fontStyle="italic">
+            "Outstanding work! Delivered beyond expectations and on time. Highly recommend."
+            <br />
+            "Great communication and technical skills. Will hire again for future projects."
+          </Text>
         </Box>
       </Stack>
     </Box>
